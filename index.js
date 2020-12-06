@@ -7,7 +7,8 @@ fs.createReadStream("employees.csv")
     const args = process.argv.slice(2);
     for (const property in row) {
       if (args[0] == `${row[property]}`) {
-        console.log(Object.values(row));      
+        // console.log(Object.values(row)); // find in array
+        console.log(row);  // find object     
       }
     }
   })
